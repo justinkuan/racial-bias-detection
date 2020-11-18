@@ -4,3 +4,5 @@ Applying NLP/NLU techniques to a corpus of crime news stories with the purpose o
 
 
 Resources can be found [here (resources.md)](resources.md).
+
+Working agenda can be found [here (agenda.md)](agenda.md).
