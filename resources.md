@@ -1,6 +1,6 @@
 # Resources
 
-*Last updated November 19, 2020 at 12:45 AM*
+*Last updated November 19, 2020 at 9:00 AM*
 
 This file contains a list of files, papers, and links that might be of help with the project.  They are categorized by:
 
@@ -39,8 +39,12 @@ This file contains a list of files, papers, and links that might be of help with
 #### Racial bias (and other bias) literature
 
 - (*blog*) [7 Examples of Racial Bias in Job Descriptions](https://blog.ongig.com/diversity-and-inclusion/racial-bias-in-job-descriptions/) - Good introductory piece into how racial language can still be found in modern job descriptions.  Some are low hanging fruit, but clearly they came from somewhere.
+- (*wikipedia*) [Racial Bias in Criminal News in the US](https://en.wikipedia.org/wiki/Racial_bias_in_criminal_news_in_the_United_States#cite_note-Blacks_in_the_News:_Television,_Modern_Racism_and_Cultural_Change-6) - Wikipedia entry
+- (*white paper*) [State of the Science: Implicit Bias Review 2014](http://kirwaninstitute.osu.edu/wp-content/uploads/2014/03/2014-implicit-bias.pdf) - White paper by the Kirwan Institute (Ohio State), a follow-up to their 2013 State of the Science paper.   Covers a broad range of
+- (*academic*) [Blacks in the News: Television, Modern Racism and Cultural Change](http://www.aejmc.org/home/wp-content/uploads/2012/09/Journalism-Quarterly-1992-Entman-341-611.pdf) - 1992 paper on racism in the news.  I haven't read this yet, but it was referenced on Wikipedia.
+- (*white paper*) [Race and Punishment: Racial Perceptions of Crime and Support for Punitive Policies](https://www.sentencingproject.org/wp-content/uploads/2015/11/Race-and-Punishment.pdf) - Referenced paper on Wikipedia by The Sentencing Project group.
 
-  
+
 
 ## Reference guides / miscellaneous
 
