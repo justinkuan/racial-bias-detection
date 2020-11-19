@@ -1,6 +1,8 @@
 # RESEARCH AGENDA for “Detecting Racial Bias in the News”**
 
- **Researchers:** Justin Kuan, Jhonsen Djajamuliadi, Bhupesh Kumar, Wen Fung Leong
+*Last updated November 18, 2020*
+
+**Researchers:** Justin Kuan, Jhonsen Djajamuliadi, Bhupesh Kumar, Wen Fung Leong
 
  **Research Question**
 
@@ -30,15 +32,15 @@ How are crime news from different media sources using racially charged language 
 
 **Research Outputs** 
 
-\1.  End-to-end large project with high transparency and replicable structure
+1. End-to-end large project with high transparency and replicable structure
 
-\2.  Easily replicable data duplication process (or just share data)
+2. Easily replicable data duplication process (or just share data)
 
-\3.  Well developed Github
+3. Well developed Github
 
-\4.  Front-end product that demonstrates contribution 
+4. Front-end product that demonstrates contribution 
 
-\5.  White paper in the form of a Medium post and Github account
+5. White paper in the form of a Medium post and Github account
 
  
 
