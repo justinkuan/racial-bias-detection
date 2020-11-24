@@ -1,10 +1,10 @@
-# RESEARCH AGENDA for “Detecting Racial Bias in the News”**
+# RESEARCH AGENDA for “Detecting Racial Bias in the News”
 
-*Last updated November 18, 2020*
+*Last updated November 24, 2020*
 
-**Researchers:** Justin Kuan, Jhonsen Djajamuliadi, Bhupesh Kumar, Wen Fung Leong
+**Researchers/Collaborators:** TBD, this will be based on investment in the project.
 
- **Research Question**
+**Research Question**
 
 How are crime news from different media sources using racially charged language around the victim’s and perpetrator’s race? 
 
@@ -46,17 +46,18 @@ How are crime news from different media sources using racially charged language 
 
 ## Quick Glance Time-Line
 
-| Phase                                                        | Description                                                  | Expected Date |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------- |
-| **I. Initial  Foray**                                        | Evaluating research question effectiveness and forming initial groundwork. |               |
-|                                                              | Exploring data sources and scope of the question, taking time to inspect all the basic elements of the project.  Quick connect on 11/19. | 11/24         |
-|                                                              | Select a few sources and start collecting preliminary data   | 12/1          |
-| **II.  Data Collection/Clean**                               | Determining how to set up the data and organize it effectively, then collecting and cleaning it.  This section has the most variability in terms of length of work. | TBD           |
-| **III.  MVP** -  to be run in conjunction with latter half of II and IV | One or two people run a very basic MVP  to see if there is any traction for our research question within the narrower  data set. Data can be swapped out for  alternative sources if needed.   Potentially use a supervised model since the data set will be much  smaller | TBD           |
-| **IV.  Modelling**                                           | Define models to use, whether it is unsupervised or supervised.  Run model, collect results, evaluate, repeat as needed. | TBD           |
-| **V.  Development and analysis** – This phase may lead back to IV | Determining a system for ranking articles based on measured racial bias.  Create necessary visualizations to understand data and results better.  Analyzing results and seeing how they fit the general research domain and how they apply to current affairs and policy issues. | TBD           |
-| **VI.  Initial Presentation**                                | From team review through formal write-ups, up to the point of getting external review. | TBD           |
-| **VII.  Front-end app**                                      | TBD                                                          | TBD           |
+| Phase                                                        | Description                                                  | Expected Date                           |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------- |
+| **I. Initial  Foray**                                        | Evaluating research question effectiveness and forming initial groundwork. | 11/17                                   |
+|                                                              | Exploring data sources and scope of the question, taking time to inspect all the basic elements of the project.  Quick connect on 11/19 possibly |                                         |
+|                                                              | Reviewing data sources and update discussion ([minutes](minutes/2020_Nov_24-minutes.md)) | [11/24](minutes/2020_Nov_24-minutes.md) |
+|                                                              | **UPDATED:** Play around with new data set, review literature, build a light outline for a method-oriented lit review  <br />~~Select a few sources and start collecting preliminary data~~ | 12/1                                    |
+| **II.  Data Collection/Clean**                               | Determining how to set up the data and organize it effectively, then collecting and cleaning it.  This section has the most variability in terms of length of work. | TBD                                     |
+| **III.  MVP** -  to be run in conjunction with latter half of II and IV | One or two people run a very basic MVP  to see if there is any traction for our research question within the narrower  data set. Data can be swapped out for  alternative sources if needed.   Potentially use a supervised model since the data set will be much  smaller | TBD                                     |
+| **IV.  Modelling**                                           | Define models to use, whether it is unsupervised or supervised.  Run model, collect results, evaluate, repeat as needed. | TBD                                     |
+| **V.  Development and analysis** – This phase may lead back to IV | Determining a system for ranking articles based on measured racial bias.  Create necessary visualizations to understand data and results better.  Analyzing results and seeing how they fit the general research domain and how they apply to current affairs and policy issues. | TBD                                     |
+| **VI.  Initial Presentation**                                | From team review through formal write-ups, up to the point of getting external review. | TBD                                     |
+| **VII.  Front-end app**                                      | TBD                                                          | TBD                                     |
 
 
 
