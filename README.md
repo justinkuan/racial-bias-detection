@@ -3,6 +3,8 @@ Applying NLP/NLU techniques to a corpus of crime news stories with the purpose o
 
 
 
-Resources can be found [here (resources.md)](resources.md).
+Resources can be found [here (resources.md)](references/resources/resources.md).
 
-Working agenda can be found [here (agenda.md)](agenda.md).
+Working agenda can be found [here (agenda.md)](references/minutes/agenda.md).
+
+Meeting minutes can be found [here (minutes)](references/minutes)
