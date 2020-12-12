@@ -20,7 +20,7 @@ Having just started in late 2020, we are still at an initial stage and formulati
 
 ## Documentation
 
-Current references and resources for review is [available here](docs/resources/resources.md).
+Current references and resources for review are [available here](docs/resources/resources.md).
 
 Working agenda is [available here](docs/minutes/agenda.md).
 
