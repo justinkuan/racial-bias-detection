@@ -15,7 +15,7 @@
 
 Racial-bias-detection is a research project on evaluating implicit bias in news media.  We strive to use a data-oriented, functional design with a focus on end-to-end research productivity.
 
-Having just started in late 2020, we are still at an initial stage and formulating our approach.Our hope is to apply NLP/NLU techniques to a corpus of news stories such as criminal news, evaluate possible racial bias in the descriptions and/or framing of the involved parties.
+Having just started in late 2020, we are still at an initial stage and formulating our approach. Our hope is to apply NLP/NLU techniques to a corpus of news stories such as criminal news, evaluate possible racial bias in the descriptions and/or framing of the involved parties.
 
 ## Documentation
 
