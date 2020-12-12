@@ -5,7 +5,6 @@
 > We can at least try to understand our own motives, passions, and prejudices, so as to be conscious of what we are doing when we appeal to those of others.  This is very difficult, because our own prejudice and emotional bias always seems to us so rational.
 
 > -- T. S. Eliot, *To Criticize the Critic*
-T.S. Eliot
 
 ![GitHub top language](https://img.shields.io/github/languages/top/justinkuan/racial-bias-detection)
 [![GitHub issues](https://img.shields.io/github/issues-raw/justinkuan/racial-bias-detection?style=flat)](https://github.com/justinkuan/racial-bias-detection/issues)
