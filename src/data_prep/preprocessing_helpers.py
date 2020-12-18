@@ -50,5 +50,3 @@ if __name__=="__main__":
     filepath, n_rows = vars(args)['filepath'], vars(args)['rows']
 
     main(filepath, n_rows)
-    
-    
