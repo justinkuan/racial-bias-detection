@@ -3,11 +3,11 @@ import argparse
 import pandas as pd
 
 data_directory = 'data'
-raw_filepath = os.path.join(data_directory, 'raw', 'all-the-news-2.1.csv')
+raw_filepath = os.path.join(os.path.relpath('.'), 'data', 'raw', 'all-the-news-2-1.csv')
     
 def convert_os_filepath(filepath):
     '''Replace Windows-style ".\\" filepath into linux-style "./"'''
-    return os.path.join(os.path.relpath('.'), 'data', 'raw', 'all-the-news-2-1.csv').replace('\\','/')
+    return filepath.replace('\\','/')
 
 def remove_empty_articles(dataset):
     '''Remove empty article columns'''
