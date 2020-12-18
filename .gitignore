@@ -145,3 +145,6 @@ local.settings.json
 
 # pycharm
 .idea
+
+# dask
+dask-worker-space/
