@@ -125,9 +125,6 @@ venv.bak/
 # vscode checkpoints
 .vscode
 
-# downloaded data
-data/raw/
-
 # mypy
 .mypy_cache/
 .dmypy.json
