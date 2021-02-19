@@ -1,0 +1,16 @@
+name: racial-bias
+dependencies:
+  - python
+  - numpy
+  - pandas
+  - seaborn
+  - pyarrow
+  - pytest
+  - scikit-learn
+  - gensim
+  - pyldavis
+  - nltk
+  - spacy
+  - jupyterlab
+  - tqdm
+  
