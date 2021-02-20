@@ -120,11 +120,8 @@ def find_best_matching_topic(lda_model, n_topics=NTOPICS):
                     topic_map[topic] +=1
     try:                
         best_topic_no, quantity = sorted(topic_map.items(), key = lambda tup: tup[1], reverse=True)[0]
-        print('Topic {topic: total keywords}-candidates are :', topic_map)
-        print('Best matching topic number is:', best_topic_no )
-        return best_topic_no if quantity != 1 else 99 
+        return best_topic_no if quantity > 1 else 99 
     except IndexError:
-        print('no matching topic number')
         return 99
 
 def model_first_batch():
