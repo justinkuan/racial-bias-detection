@@ -104,9 +104,9 @@ def build_lda_model(corpus, id2word, n_topics, alpha, eta):
 
 def find_best_matching_topic(lda_model, n_topics=NTOPICS):
     '''Function returns the topic number (int), with most matching word to keywords, i.e.,
-       ['black', 'man', 'woman', 'police', 'violence', 'kill', 'arrest']
+       ['black', 'police', 'violence', 'kill', 'arrest']
     '''
-    racial_violence = ['black', 'man', 'woman', 'police', 'violence', 'kill', 'arrest']
+    racial_violence = ['black', 'police', 'violence', 'kill', 'arrest']
     topic_map = {}  # {topic_nth: sum of matching words}
 
     for n,index in enumerate(range(n_topics)):    
@@ -119,10 +119,10 @@ def find_best_matching_topic(lda_model, n_topics=NTOPICS):
                 else:
                     topic_map[topic] +=1
     try:                
-        best_topic_no, _ = sorted(topic_map.items(), key = lambda tup: tup[1], reverse=True)[0]
-        print('Matching {topic: total keywords}-candidates are :\n', topic_map)
+        best_topic_no, quantity = sorted(topic_map.items(), key = lambda tup: tup[1], reverse=True)[0]
+        print('Topic {topic: total keywords}-candidates are :', topic_map)
         print('Best matching topic number is:', best_topic_no )
-        return best_topic_no
+        return best_topic_no if quantity != 1 else 99 
     except IndexError:
         print('no matching topic number')
         return 99
