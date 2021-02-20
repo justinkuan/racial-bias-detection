@@ -102,7 +102,7 @@ def build_lda_model(corpus, id2word, n_topics, alpha, eta):
     # pprint(lda_model.print_topics(n_topics))
     return lda_model
 
-def find_best_matching_topic(lda_model, n_topics=NTOPICS):
+def find_best_crime_topic(lda_model, n_topics=NTOPICS):
     '''Function returns the topic number (int), with most matching word to keywords, i.e.,
        ['black', 'police', 'violence', 'kill', 'arrest']
     '''
@@ -138,7 +138,7 @@ def model_first_batch():
     corpus, id2word, bigrams, data_lemmatized = make_corpus(papers)
     # Build model & print the topic number with best matching keywords
     lda_model = build_lda_model(corpus, id2word, n_topics=NTOPICS, alpha=ALPHA, eta=ETA)
-    best_topic_no = find_best_matching_topic(lda_model, n_topics=NTOPICS)
+    best_topic_no = find_best_crime_topic(lda_model, n_topics=NTOPICS)
     # label document
     df['topic'] = extract_labels(lda_model, data_lemmatized, corpus, n_topics=NTOPICS)
     print(f'Topic {best_topic_no} has ', df[df.topic==best_topic_no].shape[0], ' rows')
