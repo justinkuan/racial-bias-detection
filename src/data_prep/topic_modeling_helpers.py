@@ -8,6 +8,8 @@ import spacy
 import gensim
 import gensim.corpora as corpora
 from gensim.utils import simple_preprocess
+import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 
 # Parameters from grid-searching
@@ -116,13 +118,16 @@ def find_best_matching_topic(lda_model, n_topics=NTOPICS):
                     topic_map[topic] = 1
                 else:
                     topic_map[topic] +=1
-                    
-    best_topic_no, _ = sorted(topic_map.items(), key = lambda tup: tup[1], reverse=True)[0]
-    print('Matching {topic: total keywords}-candidates are :\n', topic_map)
-    print('Best matching topic number is:', best_topic_no )
-    return best_topic_no
-    
-def main():
+    try:                
+        best_topic_no, _ = sorted(topic_map.items(), key = lambda tup: tup[1], reverse=True)[0]
+        print('Matching {topic: total keywords}-candidates are :\n', topic_map)
+        print('Best matching topic number is:', best_topic_no )
+        return best_topic_no
+    except IndexError:
+        print('no matching topic number')
+        return 99
+
+def model_first_batch():
     filename = "subset_first_15000"
     filepath = os.path.join('data', 'interim', f'{filename}.gzip')
     msg = f'{filename}.gzip doesnt exist in data/interim folder'
@@ -146,6 +151,9 @@ def main():
     with open(f"models/lda_model_n{NTOPICS}_first15000.pkl", "wb") as fout:
         pickle.dump(lda_model, fout)
         print(f'LDA model saved as models/lda_model_n{NTOPICS}_first15000.pkl')
+
+def main():
+    model_first_batch()
     
 if __name__=="__main__":
     main()
