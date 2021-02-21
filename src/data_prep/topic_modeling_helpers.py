@@ -8,6 +8,8 @@ import spacy
 import gensim
 import gensim.corpora as corpora
 from gensim.utils import simple_preprocess
+import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 
 # Parameters from grid-searching
@@ -100,11 +102,11 @@ def build_lda_model(corpus, id2word, n_topics, alpha, eta):
     # pprint(lda_model.print_topics(n_topics))
     return lda_model
 
-def find_best_matching_topic(lda_model, n_topics=NTOPICS):
+def find_best_crime_topic(lda_model, n_topics=NTOPICS):
     '''Function returns the topic number (int), with most matching word to keywords, i.e.,
-       ['black', 'man', 'woman', 'police', 'violence', 'kill', 'arrest']
+       ['black', 'police', 'violence', 'kill', 'arrest']
     '''
-    racial_violence = ['black', 'man', 'woman', 'police', 'violence', 'kill', 'arrest']
+    racial_violence = ['black', 'police', 'violence', 'kill', 'arrest']
     topic_map = {}  # {topic_nth: sum of matching words}
 
     for n,index in enumerate(range(n_topics)):    
@@ -116,13 +118,13 @@ def find_best_matching_topic(lda_model, n_topics=NTOPICS):
                     topic_map[topic] = 1
                 else:
                     topic_map[topic] +=1
-                    
-    best_topic_no, _ = sorted(topic_map.items(), key = lambda tup: tup[1], reverse=True)[0]
-    print('Matching {topic: total keywords}-candidates are :\n', topic_map)
-    print('Best matching topic number is:', best_topic_no )
-    return best_topic_no
-    
-def main():
+    try:                
+        best_topic_no, quantity = sorted(topic_map.items(), key = lambda tup: tup[1], reverse=True)[0]
+        return best_topic_no if quantity > 1 else 99 
+    except IndexError:
+        return 99
+
+def model_first_batch():
     filename = "subset_first_15000"
     filepath = os.path.join('data', 'interim', f'{filename}.gzip')
     msg = f'{filename}.gzip doesnt exist in data/interim folder'
@@ -136,7 +138,7 @@ def main():
     corpus, id2word, bigrams, data_lemmatized = make_corpus(papers)
     # Build model & print the topic number with best matching keywords
     lda_model = build_lda_model(corpus, id2word, n_topics=NTOPICS, alpha=ALPHA, eta=ETA)
-    best_topic_no = find_best_matching_topic(lda_model, n_topics=NTOPICS)
+    best_topic_no = find_best_crime_topic(lda_model, n_topics=NTOPICS)
     # label document
     df['topic'] = extract_labels(lda_model, data_lemmatized, corpus, n_topics=NTOPICS)
     print(f'Topic {best_topic_no} has ', df[df.topic==best_topic_no].shape[0], ' rows')
@@ -146,6 +148,9 @@ def main():
     with open(f"models/lda_model_n{NTOPICS}_first15000.pkl", "wb") as fout:
         pickle.dump(lda_model, fout)
         print(f'LDA model saved as models/lda_model_n{NTOPICS}_first15000.pkl')
+
+def main():
+    model_first_batch()
     
 if __name__=="__main__":
     main()
